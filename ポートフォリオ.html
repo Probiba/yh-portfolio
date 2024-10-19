@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAYASHI YUTO Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ホーム画面（HAYASHI YUTOのセクション） -->
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>HAYASHI YUTO</h1>
+            <h1>林　勇斗</h1>
+            <p>ドキュメンタリー制作者・ゲーム開発者</p>
+            <div class="button-group">
+                <a href="#about" class="hero-button">プロフィールを見る</a>
+                <a href="#projects" class="hero-button">プロジェクトを見る</a>
+                <a href="#contact" class="hero-button">お問合せ</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- プロフィールセクション -->
+    <section id="about" class="about-section">
+        <div class="profile-image">
+            <img src="/Users/probi-ba/Documents/プロフィール/プロフィール.001.jpeg" alt="プロフィール画像" class="profile-picture">
+        </div>
+    </section>
+    
+    <!-- プロジェクトセクション -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">プロジェクト</h2>
+        <div class="project-grid">
+            <!-- プロジェクト1: ドキュメンタリー制作 -->
+            <div class="project-item" onclick="openModal('modal1')">
+                <img src="/Users/probi-ba/Downloads/IMG_0755.jpg" alt="ドキュメンタリー制作のイメージ" class="project-image">
+                <h3 class="project-title">ドキュメンタリー制作</h3>
+                <p class="project-description">課外活動（学園内）</p>
+            </div>
+
+            <!-- モーダルウィンドウ1 -->
+            <div class="modal" id="modal1">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modal1')">&times;</span>
+                    <h3>ドキュメンタリー制作プロジェクト - N高 × LINEYahoo社 コラボ企画</h3>
+                    <p>高校1年生の時に参加したN高とLINEYahoo社のコラボ企画では、ドキュメンタリー制作のプロジェクトに取り組みました。私は6つのチームのうち、フードロスをテーマにしたチームでカメラマンとして参加しました。このプロジェクトでは、プロデューサー、
+                        カメラマン、映像ディレクター、編集の４つの役割がありました。その中で私はカメラマンとして、母校や梅田にある炊き出し現場の取材を行い、映像の視覚的な構成に貢献しました。この経験を通じて、取材対象を深く理解しつつ、感動を伝える映像を撮影するスキルを磨きました。プロジェクト全体を通して、チームでの協力や課題解決の力を養う機会となりました。
+                    </p>
+                </div>
+            </div>
+
+            <!-- プロジェクト2: チームラーニングスクール -->
+            <div class="project-item" onclick="openModal('modal2')">
+                <img src="/Users/probi-ba/Desktop/スクリーンショット 2024-09-03 10.26.52.png" alt="チームラーニングスクールのイメージ" class="project-image">
+                <h3 class="project-title">チームラーニングスクール</h3>
+                <p class="project-description">課外学習（学園外）</p>
+            </div>
+
+            <!-- モーダルウィンドウ2 -->
+            <div class="modal" id="modal2">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modal2')">&times;</span>
+                    <h3>チームラーニングスクール-マイプロジェクト</h3>
+                    <p>このプロジェクトでは、チームラーニングに基づく学習を行いました。</p>
+                </div>
+            </div>
+
+            <!-- プロジェクト3: ゲーム制作 -->
+<div class="project-item">
+    <img src="" alt="ゲーム制作のイメージ" class="project-image">
+    <h3 class="project-title">ゲーム制作</h3>
+    <p class="project-description">課外学習（学園外）</p>
+</div>
+
+
+            <!-- モーダルウィンドウ3 -->
+            <div class="modal" id="modal3">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modal3')">&times;</span>
+                    <h3>ゲーム制作の詳細</h3>
+                    <p>このプロジェクトでは、ゲームの開発に取り組みました。</p>
+                </div>
+            </div>
+
+            <!-- プロジェクト4: プレゼンター -->
+            <div class="project-item" onclick="openModal('modal4')">
+                <img src="/Users/probi-ba/Downloads/かわいい水彩グラデーション.jpg" alt="プレゼンターのイメージ" class="project-image">
+                <h3 class="project-title">プレゼンター</h3>
+                <p class="project-description">ボランティア（学園内）</p>
+            </div>
+
+            <!-- モーダルウィンドウ4 -->
+            <div class="modal" id="modal4">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modal4')">&times;</span>
+                    <h3>オープンキャンパスプレゼンター</h3>
+                    <p>N高に入って4月からやっているグループワークや色々な授業、そして僕がなぜN高に入ったのか、これから頑張りたいことなどをN高で培ってきたプレゼンスキルでオープンキャンパス
+                        で皆さんにプレゼンしました。そしてこの経験通して学んだことは人にわかりやすいスライドをどう作るか、どうすれば自分の気持ちが皆さんに届くかというのを学びました。
+                    </p>
+                </div>
+            </div>
+
+            <!-- プロジェクト5: 中高交流会の運営 -->
+            <div class="project-item" onclick="openModal('modal5')">
+                <img src="/Users/probi-ba/Downloads/Neon Retro Pixel Art Game Night.jpg" alt="中高交流会の運営のイメージ" class="project-image">
+                <h3 class="project-title">中高交流会の運営</h3>
+                <p class="project-description">ボランティア（学園内）</p>
+            </div>
+
+            <!-- モーダルウィンドウ5 -->
+            <div class="modal" id="modal5">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modal5')">&times;</span>
+                    <h3>中高交流会の運営の詳細</h3>
+                    <p>中高交流会の運営に携わり、イベントを成功に導きました。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 「戻る」ボタン -->
+    <a href="#home" class="back-button" id="backButton">戻る</a>
+    
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">お問合せ</h2>
+        <p class="contact-info">メールアドレス: classroom8843@gmail.com</p>
+        <p class="contact-info">電話番号: 090-8538-8843</p>
+    </section>
+    
+    <!-- フッター -->
+    <footer class="footer">
+        <p>&copy; 2024 HAYASHI YUTO</p>
+        <a href="https://x.com/ProBiBa2">X（旧Twitter）</a>
+        <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+    </footer>
+
+    <!-- JavaScriptファイル -->
+    <script src="script.js"></script>
+</body>
+</html>
